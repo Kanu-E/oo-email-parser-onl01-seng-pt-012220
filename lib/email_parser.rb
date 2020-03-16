@@ -11,7 +11,7 @@ class EmailAddressParser
   end 
   
    def parse 
-    emails.split(/[\s,]/ ," ").split
+    emails.split.gsub(/[\s,]/ ," ").split
 
   end 
 	end
