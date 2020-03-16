@@ -3,5 +3,10 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class EmailParser
-  
+  def parse 
+    csv_emails.split.collect do |address|
+      address.split(',') 
+   
+  end 
+end  
 end
