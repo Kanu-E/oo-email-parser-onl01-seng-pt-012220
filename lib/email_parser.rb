@@ -5,6 +5,7 @@
 class EmailParser
   
   attr_accessor :name :email
+  
   def parse 
     csv_emails.split.collect do |address|
       address.split(',') 
