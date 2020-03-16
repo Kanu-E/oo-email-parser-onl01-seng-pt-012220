@@ -12,8 +12,8 @@ class EmailAddressParser
   
   def parse 
     emails.split.collect do |address|
-   address.uniq.split(',')
+   address.split(',')
   end
-  .flatten
+  .flatten.uniq
 end  
 	end
