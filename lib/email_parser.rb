@@ -12,7 +12,6 @@ class EmailAddressParser
   
    def parse 
     emails.split.(/\s/)
-      .flatten
 
   end 
 	end
