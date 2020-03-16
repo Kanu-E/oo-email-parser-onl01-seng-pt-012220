@@ -11,5 +11,6 @@ class EmailParser
       address.split(',') 
    
   end 
- 
+    .flatten
+  end  
 end
