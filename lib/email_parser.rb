@@ -10,10 +10,9 @@ class EmailParser
     @csv_emails = csv_emails
   end 
   
-  def parse 
-    csv_emails.split.collect do |address|
-      address.split(', ') 
-  end 
-    .flatten
-  end  
+  	def parse
+		@emails = @emails.gsub(/[\s,]/ ," ").split
+		# @email is an array now
+		@emails.uniq
+	end
 end
